@@ -9,11 +9,16 @@
 
 int main(void)
 {
-	char c;
+	char ch = 'B';
 
-	c = 'A';
-	printf("%c: %d\n", c, _isupper(c));
-	c = 'a';
-	printf("%c: %d\n", c, _isupper(c));
+	if (_isupper(ch))
+	{
+		printf("%c is an uppercase letter.\n", ch);
+	}
+	else
+	{
+		printf("%c is not an uppercase letter.\n", ch);
+	}
+
 	return (0);
 }
